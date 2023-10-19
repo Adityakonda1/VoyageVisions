@@ -1,0 +1,88 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block contents%}
+<header class="masthead" style="background-image:url({%static 'img/bg1.jpg'%})">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in"><span style="color: rgb(207,54,118);">Welcome To Our Travelo!</span></div>
+            <div class="intro-heading text-uppercase"><span style="color: rgb(45,116,224);">It's Nice To Meet You</span></div>
+        </div>
+    </div>
+</header>
+
+<section id="services" style="padding-top: 160px;margin-top: -160px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase section-heading">Services</h2>
+            </div>
+        </div>
+        
+        <div class="row text-center">
+            <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-fighter-jet fa-stack-1x fa-inverse" ></i></span>
+                <h4 class="section-heading">Flights</h4>
+                <p class="text-muted">Find the cheapest day to fly.&nbsp;<br>If you have a destination in mind<br>and want to find the Cheapest Flight, Choose 'Cheapest month'.</p>
+            </div>
+            
+            <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-car fa-stack-1x fa-inverse"></i></span>
+                <h4 class="section-heading">Cars</h4>
+                <p class="text-muted">Search Everywhere. Go anywhere<br>Fancy a trip but don't mind where?<br>'Everywhere' for the cheapest flight anywhere on any given day.</p>
+            </div>
+            <div class="col-md-4"><span class="fa-stack fa-4x"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-hotel fa-stack-1x fa-inverse"></i></span>
+                <h4 class="section-heading">Hotels</h4>
+                <p class="text-muted">Save on your next stay<br>we've pulled together the top hotel offers so you can find an amazing room at an even better price.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-light" id="portfolio" style="padding-top: 0px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="text-uppercase section-heading">Popular Right Now</h2>
+                <h3 class="text-muted section-subheading">Other travelers are loving these destinations. Search flights, hotels, and car and join them on the adventure.</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#" data-bs-toggle="modal"><img class="img-fluid" src="{% static 'img/p-1.jpg' %}"></a>
+                <div class="portfolio-caption">
+                    <h4>London</h4>
+                    <p class="text-muted">Flights Hotels Car</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#" data-bs-toggle="modal"><img class="img-fluid" src="{% static 'img/p-5.jpeg' %}" width="400" height="239"></a>
+                <div class="portfolio-caption">
+                    <h4>Chennai</h4>
+                    <p class="text-muted">Flights Hotels Car</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#" data-bs-toggle="modal"><img class="img-fluid" src="{% static 'img/p-2.jpeg' %}" width="400" height="196"></a>
+                <div class="portfolio-caption">
+                    <h4>New York</h4>
+                    <p class="text-muted">Flights Hotels Car</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#" data-bs-toggle="modal"><img class="img-fluid" src="{% static 'img/p-4.jpg' %}" width="400" height="507"></a>
+                <div class="portfolio-caption">
+                    <h4>Hyderabad</h4>
+                    <p class="text-muted">Flights Hotels Car</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#" data-bs-toggle="modal"><img class="img-fluid" src="{% static 'img/p-3.jpeg' %}" width="400" height="198"></a>
+                <div class="portfolio-caption">
+                    <h4>San Francisco</h4>
+                    <p class="text-muted">Flights Hotels Car</p>
+                </div>
+            </div>
+           
+            <div class="col-sm-6 col-md-4 portfolio-item"><a class="portfolio-link" href="#" data-bs-toggle="modal"><img class="img-fluid" src="{% static 'img/p-6.jpeg' %}" width="400" height="393"></a>
+                <div class="portfolio-caption">
+                    <h4>Kerala</h4>
+                    <p class="text-muted">Flights Hotels Car</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{%endblock%}
